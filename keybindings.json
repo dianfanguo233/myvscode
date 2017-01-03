@@ -1,70 +1,70 @@
 [
-{ "key": "ctrl+alt+up",           "command": "editor.action.insertCursorAbove",   "when": "editorTextFocus" },//向上复制光标
-{ "key": "ctrl+alt+down",         "command": "editor.action.insertCursorBelow",   "when": "editorTextFocus" },//向下复制光标
-{ "key": "ctrl+shift+q",          "command": "editor.action.blockComment",   "when": "editorTextFocus && !editorReadonly" },//块注释
-{ "key": "ctrl+shift+w",                "command": "editor.action.commentLine",   "when": "editorTextFocus && !editorReadonly" },//行注释
-{ "key": "ctrl+shift+a",               "command": "editor.action.changeAll",   "when": "editorTextFocus && !editorReadonly" },//选择全部相同项
-{ "key": "ctrl+shift+down",        "command": "editor.action.copyLinesDownAction",   "when": "editorTextFocus && !editorReadonly" },//向下复制行
-{ "key": "ctrl+shift+up",          "command": "editor.action.copyLinesUpAction",   "when": "editorTextFocus && !editorReadonly" },//向上复制行
-{ "key": "ctrl+g ctrl+h",           "command": "editor.action.formatDocument",   "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly" },//格式化
-{ "key": "ctrl+g ctrl+f",         "command": "editor.action.formatSelection",   "when": "editorHasDocumentFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly" },//格式化选中
-{ "key": "ctrl+enter",            "command": "editor.action.insertLineAfter",   "when": "editorTextFocus && !editorReadonly" },//在下面插入新行
-{ "key": "ctrl+shift+enter",      "command": "editor.action.insertLineBefore",   "when": "editorTextFocus && !editorReadonly" },//在上面插入新行
-{ "key": "ctrl+3",                "command": "editor.action.outdentLines",   "when": "editorTextFocus && !editorReadonly" },//减少缩进
-{ "key": "ctrl+4",                "command": "editor.action.indentLines",   "when": "editorTextFocus && !editorReadonly" },//缩进
+{ "key": "ctrl+alt+up",     "command": "editor.action.insertCursorAbove",   "when": "editorTextFocus" },//向上复制光标
+{ "key": "ctrl+alt+down",   "command": "editor.action.insertCursorBelow",   "when": "editorTextFocus" },//向下复制光标
+{ "key": "ctrl+shift+q",    "command": "editor.action.blockComment",   "when": "editorTextFocus && !editorReadonly" },//块注释
+{ "key": "ctrl+shift+w",    "command": "editor.action.commentLine",   "when": "editorTextFocus && !editorReadonly" },//行注释
+{ "key": "ctrl+shift+a",    "command": "editor.action.changeAll",   "when": "editorTextFocus && !editorReadonly" },//选择全部相同项
+{ "key": "ctrl+shift+down", "command": "editor.action.copyLinesDownAction",   "when": "editorTextFocus && !editorReadonly" },//向下复制行
+{ "key": "ctrl+shift+up",   "command": "editor.action.copyLinesUpAction",   "when": "editorTextFocus && !editorReadonly" },//向上复制行
+{ "key": "ctrl+g ctrl+h",   "command": "editor.action.formatDocument",   "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly" },//格式化
+{ "key": "ctrl+g ctrl+f",   "command": "editor.action.formatSelection",   "when": "editorHasDocumentFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly" },//格式化选中
+{ "key": "ctrl+enter",      "command": "editor.action.insertLineAfter",   "when": "editorTextFocus && !editorReadonly" },//在下面插入新行
+{ "key": "ctrl+shift+enter","command": "editor.action.insertLineBefore",   "when": "editorTextFocus && !editorReadonly" },//在上面插入新行
+{ "key": "ctrl+3",          "command": "editor.action.outdentLines",   "when": "editorTextFocus && !editorReadonly" },//减少缩进
+{ "key": "ctrl+4",          "command": "editor.action.indentLines",   "when": "editorTextFocus && !editorReadonly" },//缩进
+{ "key": "ctrl+shift+t",    "command": "workbench.action.terminal.openNativeConsole",   "when": "!terminalFocus" },//打开原生命令行
+{ "key": "ctrl+tab",        "command": "workbench.action.openNextRecentlyUsedEditorInGroup" },//最近的编辑器
+{ "key": "ctrl+shift+n",    "command": "markdown.showPreviewToSide",   "when": "editorFocus" },//markdown侧边预览
+{ "key": "ctrl+shift+[",    "command": "editor.fold",   "when": "editorTextFocus" },//折叠
+{ "key": "ctrl+shift+]",    "command": "editor.unfold",   "when": "editorTextFocus" },//取消折叠
+{ "key": "ctrl+t",          "command": "editor.action.triggerSuggest",   "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },//弹出代码提示
+{ "key": "alt+left",        "command": "workbench.action.navigateBack" },//上一个焦点
+{ "key": "alt+right",       "command": "workbench.action.navigateForward" },//下一个焦点
+{ "key": "ctrl+r",          "command": "workbench.action.openRecent" },//打开最近文件
+{ "key": "ctrl+shift+b",    "command": "workbench.action.output.toggleOutput" },//打开输出窗口
+{ "key": "ctrl+y",          "command": "workbench.action.reopenClosedEditor" },//重新打开关闭的编辑器
+{ "key": "ctrl+\\",         "command": "workbench.action.splitEditor" },//分屏
+{ "key": "ctrl+shift+`",    "command": "workbench.action.terminal.new" },//新的命令行
+{ "key": "ctrl+shift+r",    "command": "workbench.actions.view.problems" },//查看问题
+{ "key": "ctrl+u",          "command": "editor.action.selectHighlights",   "when": "editorFocus" },//选择高亮部分
+{ "key": "ctrl+alt+right",  "command": "editor.action.smartSelect.grow",   "when": "editorTextFocus" },//智能选择
+{ "key": "ctrl+alt+left",   "command": "editor.action.smartSelect.shrink",   "when": "editorTextFocus" },//回退智能选择
+{ "key": "shift+f4",        "command": "workbench.action.closeActiveEditor" },//关闭当前编辑器
+{ "key": "ctrl+w",          "command": "workbench.action.togglePanel" },//面板打开状态
+{ "key": "ctrl+n",          "command": "workbench.action.files.newUntitledFile" },//新建文件
+{ "key": "ctrl+m",          "command": "toggleSuggestionDetails",   "when": "editorTextFocus && suggestWidgetVisible" },//显示代码提示细节
+{ "key": "ctrl+pagedown",   "command": "workbench.action.nextEditor" },//下一个编辑器
+{ "key": "ctrl+pageup",     "command": "workbench.action.previousEditor" },//上一个编辑器
+//ctrl+shift+c,ctrl+shift+v,ctrl+h,ctrl+shift+h,ctrl+shift+3,ctrl+shift+4,ctrl+shift+5,ctrl+5,ctrl+6
+
+{ "key": "alt+down",        "command": "find.history.showNext",   "when": "editorFocus && findInputFocussed && findWidgetVisible" },//下一次查找
+{ "key": "alt+up",          "command": "find.history.showPrevious",   "when": "editorFocus && findInputFocussed && findWidgetVisible" },//上一次查找
+{ "key": "alt+enter",       "command": "editor.action.selectAllMatches",   "when": "editorFocus && findWidgetVisible" },//选择全部搜索匹配项
+{ "key": "alt+c",           "command": "toggleFindCaseSensitive",   "when": "editorFocus" },//查找-大小写
+{ "key": "alt+r",           "command": "toggleFindRegex",   "when": "editorFocus" },//查找-正则
+{ "key": "alt+w",           "command": "toggleFindWholeWord",   "when": "editorFocus" },//查找-全词
+
+{ "key": "alt+down",        "command": "search.history.showNext",   "when": "searchInputBoxFocus && searchViewletVisible" },//下一个搜索结果
+{ "key": "alt+up",          "command": "search.history.showPrevious",   "when": "searchInputBoxFocus && searchViewletVisible" },//上一个搜索结果
+{ "key": "alt+c",           "command": "toggleSearchCaseSensitive",   "when": "searchInputBoxFocus && searchViewletVisible" },//搜索-大小写
+{ "key": "alt+r",           "command": "toggleSearchRegex",   "when": "searchInputBoxFocus && searchViewletVisible" },//搜索-正则
+{ "key": "alt+w",           "command": "toggleSearchWholeWord",   "when": "searchInputBoxFocus && searchViewletVisible" },//搜索-全词
+
+{ "key": "f5",              "command": "workbench.action.debug.continue",   "when": "inDebugMode" },//继续debug
+{ "key": "ctrl+shift+f5",   "command": "workbench.action.debug.restart",   "when": "inDebugMode" },//重启debug
+{ "key": "ctrl+f5",         "command": "workbench.action.debug.run",   "when": "!inDebugMode" },//开始调试
+{ "key": "f5",              "command": "workbench.action.debug.start",   "when": "!inDebugMode" },//开始debug
+{ "key": "f11",             "command": "workbench.action.debug.stepInto",   "when": "inDebugMode" },//步入
+{ "key": "shift+f11",       "command": "workbench.action.debug.stepOut",   "when": "inDebugMode" },//步出
+{ "key": "f10",             "command": "workbench.action.debug.stepOver",   "when": "inDebugMode" },//单步跳过
+{ "key": "shift+f5",        "command": "workbench.action.debug.stop",   "when": "inDebugMode" },//停止debug
+{ "key": "ctrl+shift+y",    "command": "workbench.debug.action.toggleRepl" },//调试控制台
+
+{ "key": "ctrl+g ctrl+d",         "command": "editor.action.moveSelectionToNextFindMatch",   "when": "editorFocus" },//跳过这个相同项
 { "key": "ctrl+shift+d",          "command": "workbench.view.debug" },//debug
 { "key": "ctrl+shift+e",          "command": "workbench.view.explorer" },//explorer
 { "key": "ctrl+shift+g",          "command": "workbench.view.git" },//git
 { "key": "ctrl+shift+x",          "command": "workbench.view.extensions" },//插件
-{ "key": "ctrl+shift+t",          "command": "workbench.action.terminal.openNativeConsole",   "when": "!terminalFocus" },//打开原生命令行
-{ "key": "ctrl+tab",              "command": "workbench.action.openNextRecentlyUsedEditorInGroup" },//最近的编辑器
-{ "key": "ctrl+shift+n",              "command": "markdown.showPreviewToSide",   "when": "editorFocus" },//markdown侧边预览
-{ "key": "ctrl+shift+[",          "command": "editor.fold",   "when": "editorTextFocus" },//折叠
-{ "key": "ctrl+shift+]",          "command": "editor.unfold",   "when": "editorTextFocus" },//取消折叠
-{ "key": "ctrl+t",            "command": "editor.action.triggerSuggest",   "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },//弹出代码提示
-{ "key": "alt+left",              "command": "workbench.action.navigateBack" },//上一个焦点
-{ "key": "alt+right",             "command": "workbench.action.navigateForward" },//下一个焦点
-{ "key": "ctrl+r",                "command": "workbench.action.openRecent" },//打开最近文件
-{ "key": "ctrl+shift+b",          "command": "workbench.action.output.toggleOutput" },//打开输出窗口
-{ "key": "ctrl+y",          "command": "workbench.action.reopenClosedEditor" },//重新打开关闭的编辑器
-{ "key": "ctrl+\\",               "command": "workbench.action.splitEditor" },//分屏
-{ "key": "ctrl+shift+`",          "command": "workbench.action.terminal.new" },//新的命令行
-{ "key": "ctrl+shift+r",          "command": "workbench.actions.view.problems" },//查看问题
-{ "key": "ctrl+g ctrl+d",         "command": "editor.action.moveSelectionToNextFindMatch",   "when": "editorFocus" },//跳过这个相同项
-{ "key": "ctrl+u",          "command": "editor.action.selectHighlights",   "when": "editorFocus" },//选择高亮部分
-{ "key": "ctrl+alt+right",       "command": "editor.action.smartSelect.grow",   "when": "editorTextFocus" },//智能选择
-{ "key": "ctrl+alt+left",        "command": "editor.action.smartSelect.shrink",   "when": "editorTextFocus" },//回退智能选择
-{ "key": "shift+f4",               "command": "workbench.action.closeActiveEditor" },//关闭当前编辑器
-{ "key": "ctrl+w",                "command": "workbench.action.togglePanel" },//面板打开状态
-{ "key": "ctrl+n",                "command": "workbench.action.files.newUntitledFile" },//新建文件
-{ "key": "ctrl+m",            "command": "toggleSuggestionDetails",   "when": "editorTextFocus && suggestWidgetVisible" },//显示代码提示细节
-{ "key": "ctrl+pagedown",         "command": "workbench.action.nextEditor" },//下一个编辑器
-{ "key": "ctrl+pageup",           "command": "workbench.action.previousEditor" },//上一个编辑器
-//ctrl+shift+c,ctrl+shift+v,ctrl+h,ctrl+shift+h,ctrl+shift+3,ctrl+shift+4,ctrl+shift+5,ctrl+5,ctrl+6
-
-{ "key": "alt+down",              "command": "find.history.showNext",   "when": "editorFocus && findInputFocussed && findWidgetVisible" },//下一次查找
-{ "key": "alt+up",                "command": "find.history.showPrevious",   "when": "editorFocus && findInputFocussed && findWidgetVisible" },//上一次查找
-{ "key": "alt+enter",             "command": "editor.action.selectAllMatches",   "when": "editorFocus && findWidgetVisible" },//选择全部搜索匹配项
-{ "key": "alt+c",                 "command": "toggleFindCaseSensitive",   "when": "editorFocus" },//查找-大小写
-{ "key": "alt+r",                 "command": "toggleFindRegex",   "when": "editorFocus" },//查找-正则
-{ "key": "alt+w",                 "command": "toggleFindWholeWord",   "when": "editorFocus" },//查找-全词
-
-{ "key": "alt+down",              "command": "search.history.showNext",   "when": "searchInputBoxFocus && searchViewletVisible" },//下一个搜索结果
-{ "key": "alt+up",                "command": "search.history.showPrevious",   "when": "searchInputBoxFocus && searchViewletVisible" },//上一个搜索结果
-{ "key": "alt+c",                 "command": "toggleSearchCaseSensitive",   "when": "searchInputBoxFocus && searchViewletVisible" },//搜索-大小写
-{ "key": "alt+r",                 "command": "toggleSearchRegex",   "when": "searchInputBoxFocus && searchViewletVisible" },//搜索-正则
-{ "key": "alt+w",                 "command": "toggleSearchWholeWord",   "when": "searchInputBoxFocus && searchViewletVisible" },//搜索-全词
-
-{ "key": "f5",                    "command": "workbench.action.debug.continue",   "when": "inDebugMode" },//继续debug
-{ "key": "ctrl+shift+f5",         "command": "workbench.action.debug.restart",   "when": "inDebugMode" },//重启debug
-{ "key": "ctrl+f5",               "command": "workbench.action.debug.run",   "when": "!inDebugMode" },//开始调试
-{ "key": "f5",                    "command": "workbench.action.debug.start",   "when": "!inDebugMode" },//开始debug
-{ "key": "f11",                   "command": "workbench.action.debug.stepInto",   "when": "inDebugMode" },//步入
-{ "key": "shift+f11",             "command": "workbench.action.debug.stepOut",   "when": "inDebugMode" },//步出
-{ "key": "f10",                   "command": "workbench.action.debug.stepOver",   "when": "inDebugMode" },//单步跳过
-{ "key": "shift+f5",              "command": "workbench.action.debug.stop",   "when": "inDebugMode" },//停止debug
-{ "key": "ctrl+shift+y",          "command": "workbench.debug.action.toggleRepl" },//调试控制台
-
 { "key": "ctrl+down",              "command": "editor.action.moveLinesDownAction",   "when": "editorTextFocus && !editorReadonly" },
 { "key": "ctrl+up",                "command": "editor.action.moveLinesUpAction",   "when": "editorTextFocus && !editorReadonly" },
 { "key": "ctrl+shift+/",          "command": "editor.action.blockComment",   "when": "editorTextFocus && !editorReadonly" },//块注释
