@@ -5,12 +5,8 @@
 { "key": "ctrl+alt+down",   "command": "editor.action.insertCursorBelow",   "when": "editorTextFocus" },//向下复制光标
 { "key": "ctrl+enter",      "command": "editor.action.insertLineAfter",   "when": "editorTextFocus && !editorReadonly" },//在下面插入新行
 { "key": "ctrl+shift+enter","command": "editor.action.insertLineBefore",   "when": "editorTextFocus && !editorReadonly" },//在上面插入新行
-{ "key": "ctrl+shift+q",    "command": "editor.action.blockComment",   "when": "editorTextFocus && !editorReadonly" },//块注释
-{ "key": "ctrl+shift+w",    "command": "editor.action.commentLine",   "when": "editorTextFocus && !editorReadonly" },//行注释
 { "key": "ctrl+3",          "command": "editor.action.outdentLines",   "when": "editorTextFocus && !editorReadonly" },//减少缩进
 { "key": "ctrl+4",          "command": "editor.action.indentLines",   "when": "editorTextFocus && !editorReadonly" },//缩进
-{ "key": "ctrl+shift+[",    "command": "editor.fold",   "when": "editorTextFocus" },//折叠
-{ "key": "ctrl+shift+]",    "command": "editor.unfold",   "when": "editorTextFocus" },//取消折叠
 { "key": "ctrl+alt+right",  "command": "editor.action.smartSelect.grow",   "when": "editorTextFocus" },//智能选择
 { "key": "ctrl+alt+left",   "command": "editor.action.smartSelect.shrink",   "when": "editorTextFocus" },//回退智能选择
 { "key": "alt+left",        "command": "workbench.action.navigateBack" },//上一个焦点
@@ -30,6 +26,8 @@
 { "key": "ctrl+t",          "command": "editor.action.triggerSuggest",   "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly" },//弹出代码提示
 { "key": "ctrl+tab",        "command": "workbench.action.openNextRecentlyUsedEditorInGroup" },//最近的编辑器
 { "key": "ctrl+shift+b",    "command": "workbench.action.output.toggleOutput" },//打开输出窗口
+{ "key": "ctrl+shift+q",    "command": "editor.action.blockComment",   "when": "editorTextFocus && !editorReadonly" },//块注释
+{ "key": "ctrl+shift+w",    "command": "editor.action.commentLine",   "when": "editorTextFocus && !editorReadonly" },//行注释
 //ctrl+shift+c,ctrl+shift+v,ctrl+g,ctrl+n,ctrl+shift+3,ctrl+shift+4,ctrl+shift+5,ctrl+5,ctrl+6
 
 { "key": "alt+down",        "command": "find.history.showNext",   "when": "editorFocus && findInputFocussed && findWidgetVisible" },//下一次查找
